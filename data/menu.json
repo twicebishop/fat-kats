@@ -1,0 +1,518 @@
+{
+  "categories": [
+    {
+      "id": "pizza_build",
+      "title": "Build Your Own Pizza",
+      "format": "table",
+      "bannerImage": "https://images.unsplash.com/photo-1513104890138-7c749659a591?w=2070",
+      "columns": [
+        "Style",
+        "Junior",
+        "Small",
+        "Medium",
+        "Large",
+        "X-Large"
+      ],
+      "rows": [
+        {
+          "id": "tr",
+          "label": "Traditional Round (Cheese)",
+          "values": [
+            "$3.99",
+            "$5.99",
+            "$6.99",
+            "$8.99",
+            "$10.99"
+          ]
+        },
+        {
+          "id": "tre",
+          "label": "+ Extra Toppings (Each)",
+          "values": [
+            "$0.80",
+            "$1.30",
+            "$1.55",
+            "$1.80",
+            "$2.20"
+          ]
+        },
+        {
+          "id": "rp",
+          "label": "Rectangle Pan (Cheese)",
+          "values": [
+            "-",
+            "-",
+            "$7.99",
+            "$10.99",
+            "-"
+          ]
+        },
+        {
+          "id": "rpe",
+          "label": "+ Extra Toppings (Each)",
+          "values": [
+            "-",
+            "-",
+            "$1.55",
+            "$1.95",
+            "-"
+          ]
+        },
+        {
+          "id": "gf",
+          "label": "Gluten Free 10\" (Cheese)",
+          "values": [
+            "-",
+            "-",
+            "$8.99",
+            "-",
+            "-"
+          ]
+        },
+        {
+          "id": "gfe",
+          "label": "+ Extra Toppings (Each)",
+          "values": [
+            "-",
+            "-",
+            "$1.30",
+            "-",
+            "-"
+          ]
+        }
+      ],
+      "footer": ""
+    },
+    {
+      "id": "pizza_supreme",
+      "title": "Supreme Pizzas",
+      "format": "table",
+      "bannerImage": "https://images.unsplash.com/photo-1513104890138-7c749659a591?w=2070",
+      "columns": [
+        "Style",
+        "Small",
+        "Medium",
+        "Large",
+        "X-Large"
+      ],
+      "rows": [
+        {
+          "id": "sr",
+          "label": "Supreme Round",
+          "values": [
+            "$13.99",
+            "$15.99",
+            "$17.99",
+            "$23.99"
+          ]
+        },
+        {
+          "id": "sp",
+          "label": "Supreme Pan",
+          "values": [
+            "-",
+            "$15.99",
+            "$18.99",
+            "-"
+          ]
+        }
+      ],
+      "footer": "Supreme Toppings: Mozzarella Cheese, Pepperoni, Onions, Ham, Mushrooms, Green Peppers, Italian Sausage, Ground Beef, and Extra Cheese"
+    },
+    {
+      "id": "pizza_specialty",
+      "title": "Specialty Pizzas",
+      "format": "table",
+      "bannerImage": "https://images.unsplash.com/photo-1513104890138-7c749659a591?w=2070",
+      "columns": [
+        "Style",
+        "Small",
+        "Medium",
+        "Large",
+        "X-Large"
+      ],
+      "rows": [
+        {
+          "id": "spr",
+          "label": "Specialty Round",
+          "values": [
+            "$9.99",
+            "$11.99",
+            "$13.99",
+            "$18.99"
+          ]
+        },
+        {
+          "id": "spp",
+          "label": "Specialty Pan",
+          "values": [
+            "-",
+            "$12.99",
+            "$15.99",
+            "-"
+          ]
+        }
+      ],
+      "options": [
+        {
+          "name": "Spicy BBQ Chicken Pizza",
+          "description": "Mozzarella, Spicy BBQ Chicken, Bacon, Onions",
+          "image": "https://loremflickr.com/800/600/pizza,bbq,chicken/all"
+        },
+        {
+          "name": "Vegan Pizza",
+          "description": "Mushroom, Onions, Tomatoes, Banana Pepper Rings, Special Vegan Sauce",
+          "image": "https://loremflickr.com/800/600/pizza,vegan/all"
+        },
+        {
+          "name": "Pepper Steak Pizza",
+          "description": "Mozzarella, Steak, Mushroom, Onions, Green Peppers",
+          "image": "https://loremflickr.com/800/600/pizza,steak/all"
+        },
+        {
+          "name": "Greek Pizza",
+          "description": "Mozzarella, Tomatoes, Onions, Banana Peppers, Black Olives, Feta Cheese, Greek dressing",
+          "image": "https://loremflickr.com/800/600/pizza,greek/all"
+        },
+        {
+          "name": "Fat Kat's Special",
+          "description": "Pepperoni, Ham, Mushrooms, Onions, Green Peppers",
+          "image": "https://loremflickr.com/800/600/pizza,supreme/all"
+        },
+        {
+          "name": "Taco Pizza",
+          "description": "Taco Meat and Cheese topped with Lettuce, Tomatoes and Cheddar Cheese",
+          "image": "https://loremflickr.com/800/600/pizza,taco/all"
+        },
+        {
+          "name": "Meat Pleaser",
+          "description": "Pepperoni, Ham, Bacon, Italian Sausage, Ground Beef",
+          "image": "https://loremflickr.com/800/600/pizza,meat/all"
+        },
+        {
+          "name": "BLT Pizza",
+          "description": "Mozzarella and Bacon topped with Lettuce and Tomatoes",
+          "image": "https://loremflickr.com/800/600/pizza,bacon,tomato/all"
+        },
+        {
+          "name": "Vegetarian",
+          "description": "Mushrooms, Onions, Green Peppers, Black Olives, Tomatoes",
+          "image": "https://loremflickr.com/800/600/pizza,vegetarian/all"
+        },
+        {
+          "name": "Hawaiian",
+          "description": "Loaded with Ham, Pineapple, and Bacon",
+          "image": "https://loremflickr.com/800/600/pizza,hawaiian/all"
+        },
+        {
+          "name": "Spicy Pepperoni Pleaser",
+          "description": "Loaded with Spicy Pepperoni and Extra Mozzarella Cheese",
+          "image": "https://loremflickr.com/800/600/pizza,pepperoni,spicy/all"
+        },
+        {
+          "name": "Meatball Special",
+          "description": "Italian Style Meatballs, Onions, Green Peppers, Mozzarella, and Parmesan Cheese",
+          "image": "https://loremflickr.com/800/600/pizza,meatball/all"
+        },
+        {
+          "name": "Chicken Club",
+          "description": "Loaded with Chicken, Bacon, and Cheese topped with Lettuce and Tomatoes",
+          "image": "https://loremflickr.com/800/600/pizza,chicken,club/all"
+        },
+        {
+          "name": "Buffalo Chicken Pizza",
+          "description": "Loaded with Buffalo Style Chicken, Mozzarella Cheese",
+          "image": "https://loremflickr.com/800/600/pizza,buffalo,chicken/all"
+        },
+        {
+          "name": "BBQ Chicken Pizza",
+          "description": "Mozzarella Cheese, BBQ Chicken, Bacon, and Onions",
+          "image": "https://loremflickr.com/800/600/pizza,bbq/all"
+        },
+        {
+          "name": "Hawaiian BBQ Chicken Pizza",
+          "description": "Mozzarella Cheese, BBQ Chicken, Pineapple and Bacon",
+          "image": "https://loremflickr.com/800/600/pizza,hawaiian,bbq/all"
+        }
+      ],
+      "footer": ""
+    },
+    {
+      "id": "subs",
+      "title": "Subs & Calzones",
+      "format": "table",
+      "bannerImage": "https://images.unsplash.com/photo-1612871689353-cccf581d667b?w=2070",
+      "columns": [
+        "Style",
+        "Bun Style",
+        "Calzone Small",
+        "Calzone Large"
+      ],
+      "rows": [
+        {
+          "id": "subs_all",
+          "label": "All Subs",
+          "values": [
+            "$9.43",
+            "$5.66",
+            "$9.43"
+          ]
+        }
+      ],
+      "options": [
+        {
+          "name": "Italian Sub",
+          "description": "Pepperoni, Ham, Cheese, Lettuce, Onions, Banana Peppers",
+          "image": "https://loremflickr.com/800/600/sandwich,italian/all"
+        },
+        {
+          "name": "Chicken Sub",
+          "description": "Chicken, Cheese, Lettuce, Onions, Banana Peppers",
+          "image": "https://loremflickr.com/800/600/sandwich,chicken/all"
+        },
+        {
+          "name": "Steak, Cheese & Mushroom",
+          "description": "Lettuce, Onions, Banana Peppers",
+          "image": "https://loremflickr.com/800/600/sandwich,steak/all"
+        },
+        {
+          "name": "Vegetarian Sub",
+          "description": "Pizza Sauce, Mushrooms, Onions, Green Peppers, Black Olives, Cheese, Lettuce, Tomatoes, Banana Peppers",
+          "image": "https://loremflickr.com/800/600/sandwich,vegetarian/all"
+        },
+        {
+          "name": "Meatball Sub",
+          "description": "Pizza Sauce, Meatballs, Cheese",
+          "image": "https://loremflickr.com/800/600/sandwich,meatball/all"
+        },
+        {
+          "name": "Taco Sub",
+          "description": "Taco Meat, Cheese, Topped with Lettuce, Tomatoes, Cheddar Cheese",
+          "image": "https://loremflickr.com/800/600/sandwich,taco/all"
+        }
+      ]
+    },
+    {
+      "id": "wings",
+      "title": "Chicken Wings",
+      "format": "table",
+      "bannerImage": "https://images.unsplash.com/photo-1527477396000-e27163b481c2?w=2070",
+      "columns": [
+        "Style",
+        "6 Piece",
+        "8 Piece",
+        "12 Piece",
+        "18 Piece"
+      ],
+      "rows": [
+        {
+          "id": "wing_in",
+          "label": "Bone-In Wings",
+          "values": [
+            "$7.08",
+            "-",
+            "$12.05",
+            "$21.23"
+          ]
+        },
+        {
+          "id": "wing_out",
+          "label": "Boneless Wings",
+          "values": [
+            "-",
+            "$8.49",
+            "-",
+            "-"
+          ]
+        }
+      ],
+      "footer": "Sauce Options: Plain, BBQ, Spicy BBQ, Buffalo, Garlic Parmesan"
+    },
+    {
+      "id": "sides",
+      "title": "On The Side",
+      "format": "grid",
+      "items": [
+        {
+          "id": "sd1",
+          "name": "Breadsticks",
+          "description": "Freshly baked",
+          "price": "4.72",
+          "image": "https://loremflickr.com/800/600/breadsticks/all"
+        },
+        {
+          "id": "sd2",
+          "name": "Fat Kat's Cheese Bread",
+          "description": "Melted cheese perfection",
+          "price": "5.69",
+          "image": "https://loremflickr.com/800/600/cheesebread/all"
+        },
+        {
+          "id": "sd3",
+          "name": "Bacon or Pepperoni Cheese Bread",
+          "description": "Loaded with your favorite topping",
+          "price": "6.61",
+          "image": "https://loremflickr.com/800/600/cheesebread,bacon/all"
+        },
+        {
+          "id": "sd6",
+          "name": "Fat Kat's Spicy Sticks",
+          "description": "Hot and spicy",
+          "price": "4.72",
+          "image": "https://loremflickr.com/800/600/breadsticks,spicy/all"
+        },
+        {
+          "id": "sd7",
+          "name": "Jalapeno Cheese Bread",
+          "description": "Spicy cheese bread",
+          "price": "6.61",
+          "image": "https://loremflickr.com/800/600/cheesebread,jalapeno/all"
+        },
+        {
+          "id": "sd8",
+          "name": "Cheddar Cheese Bread",
+          "description": "Rich cheddar cheese",
+          "price": "6.61",
+          "image": "https://loremflickr.com/800/600/cheesebread,cheddar/all"
+        },
+        {
+          "id": "sd9",
+          "name": "Barbeque Style Meatballs",
+          "description": "Saucy meatballs",
+          "price": "6.99",
+          "image": "https://loremflickr.com/800/600/meatballs,bbq/all"
+        }
+      ]
+    },
+    {
+      "id": "salads_drinks",
+      "title": "Salads & Drinks",
+      "format": "grid",
+      "items": [
+        {
+          "id": "sal1",
+          "name": "Chef Salad",
+          "description": "Lettuce, Ham, Onions, Green Peppers, Mozzarella, Tomatoes, Black Olives",
+          "price": "8.00",
+          "image": "https://loremflickr.com/800/600/salad,chef/all"
+        },
+        {
+          "id": "sal2",
+          "name": "Antipasto Salad",
+          "description": "Lettuce, Ham, Pepperoni, Mozzarella, Tomato, Black Olives",
+          "price": "8.00",
+          "image": "https://loremflickr.com/800/600/salad,antipasto/all"
+        },
+        {
+          "id": "sal3",
+          "name": "Greek Salad",
+          "description": "Lettuce, Beets, Onions, Feta Cheese, Tomatoes, Black Olives",
+          "price": "8.00",
+          "image": "https://loremflickr.com/800/600/salad,greek/all"
+        },
+        {
+          "id": "dr1",
+          "name": "Rootbeer Float",
+          "description": "Classic and refreshing",
+          "price": "6.00",
+          "image": "https://loremflickr.com/800/600/rootbeer/all"
+        },
+        {
+          "id": "dr2",
+          "name": "Ice Cold Pop",
+          "description": "2 Liter",
+          "price": "3.70",
+          "image": "https://loremflickr.com/800/600/soda,bottle/all"
+        }
+      ]
+    }
+  ],
+  "coupons": [
+    {
+      "title": "The 3 Fat Kats",
+      "description": "3 Large Pizzas with Cheese and 2 toppings",
+      "subtitle": "Make it a Speciality Pizza for $5 more per pizza",
+      "price": "$27.99"
+    },
+    {
+      "title": "Pizza & Salad",
+      "description": "1 two-topping pizza and choice of Salad (Chef, Greek, Antipasto, or Caesar)",
+      "prices": [
+        {
+          "size": "Medium",
+          "price": "$13.99"
+        },
+        {
+          "size": "Large",
+          "price": "$15.99"
+        }
+      ]
+    },
+    {
+      "title": "Pizza, Cheesebread, and Wings",
+      "description": "2 one-topping pizzas, Cheesebread, and 10pc Chicken Wings",
+      "prices": [
+        {
+          "size": "Medium",
+          "price": "$26.99"
+        },
+        {
+          "size": "Large",
+          "price": "$29.99"
+        }
+      ]
+    },
+    {
+      "title": "Mostaccioli",
+      "description": "Delicious Mostaccioli",
+      "price": "$6.99"
+    },
+    {
+      "title": "Family Special",
+      "description": "2 pizzas (one with five toppings and one with one topping)",
+      "prices": [
+        {
+          "size": "Small",
+          "price": "$14.99"
+        },
+        {
+          "size": "Medium",
+          "price": "$18.99"
+        },
+        {
+          "size": "Large",
+          "price": "$21.99"
+        }
+      ]
+    },
+    {
+      "title": "Pan Pizza Special",
+      "description": "2 Deep Dish pizzas with one topping each",
+      "prices": [
+        {
+          "size": "Medium",
+          "price": "$13.99"
+        },
+        {
+          "size": "Large",
+          "price": "$19.99"
+        }
+      ]
+    },
+    {
+      "title": "Sub Special",
+      "description": "2 Large Sub bun or Calzone Style subs and 2 Liter of Pop",
+      "price": "$20.99"
+    },
+    {
+      "title": "Medium Pizza Deal",
+      "description": "1 Medium Pizza with Cheese and two toppings",
+      "price": "$7.99"
+    },
+    {
+      "title": "Pizza & Cheesebread",
+      "description": "1 Large pizza with cheese and one topping plus an order of Cheese bread",
+      "price": "$13.99"
+    }
+  ]
+}
