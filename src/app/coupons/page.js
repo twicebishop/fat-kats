@@ -17,6 +17,8 @@ export default async function CouponsPage() {
           </Link>
           
           <div style={{ textAlign: 'center' }}>
+            <img src="/logo.png" alt="Fat Kats Logo" style={{ width: '250px', maxWidth: '80%', height: 'auto', marginBottom: '20px', filter: 'drop-shadow(0 4px 8px rgba(0,0,0,0.1))' }} />
+            <br />
             <h1 style={{ fontSize: '3rem', color: 'var(--color-primary)', display: 'inline-block', borderBottom: '4px dashed var(--color-primary)', paddingBottom: '10px', marginBottom: '15px' }}>
               ✂️ Limited Time Coupons
             </h1>
@@ -31,19 +33,19 @@ export default async function CouponsPage() {
             {menu.coupons.map((coupon, idx) => (
               <div key={idx} className="coupon-card">
                 <img src="/logo.png" alt="Fat Kats Logo" style={{ height: '40px', objectFit: 'contain', margin: '0 auto 15px auto' }} />
-                <h3 style={{ fontSize: '1.6rem', marginBottom: '10px', color: '#000', fontWeight: 'bold' }}>{coupon.title}</h3>
-                <p style={{ fontSize: '1.2rem', marginBottom: coupon.subtitle ? '5px' : '20px', lineHeight: '1.5', color: '#333' }}>{coupon.description}</p>
+                <h3 style={{ fontSize: '1.6rem', marginBottom: '10px', color: '#fff', fontWeight: 'bold' }}>{coupon.title}</h3>
+                <p style={{ fontSize: '1.2rem', marginBottom: coupon.subtitle ? '5px' : '20px', lineHeight: '1.5', color: '#eee' }}>{coupon.description}</p>
                 {coupon.subtitle && (
-                  <p style={{ fontSize: '1rem', fontStyle: 'italic', marginBottom: '20px', color: '#666' }}>
+                  <p style={{ fontSize: '1rem', fontStyle: 'italic', marginBottom: '20px', color: '#ccc' }}>
                     {coupon.subtitle}
                   </p>
                 )}
                 
-                <div style={{ marginTop: 'auto', background: 'rgba(0, 0, 0, 0.05)', padding: '10px 15px', borderRadius: '8px', display: 'flex', flexDirection: 'column', gap: '8px' }}>
+                <div style={{ marginTop: 'auto', background: 'rgba(255, 255, 255, 0.05)', padding: '10px 15px', borderRadius: '8px', display: 'flex', flexDirection: 'column', gap: '8px' }}>
                   {coupon.prices ? (
                     coupon.prices.map((p, pIdx) => (
-                      <div key={pIdx} style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', borderBottom: pIdx < coupon.prices.length - 1 ? '1px solid rgba(0, 0, 0, 0.1)' : 'none', paddingBottom: pIdx < coupon.prices.length - 1 ? '8px' : '0' }}>
-                        <span style={{ fontSize: '1.2rem', fontWeight: 'bold', color: '#333' }}>{p.size}</span>
+                      <div key={pIdx} style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', borderBottom: pIdx < coupon.prices.length - 1 ? '1px solid rgba(255, 255, 255, 0.1)' : 'none', paddingBottom: pIdx < coupon.prices.length - 1 ? '8px' : '0' }}>
+                        <span style={{ fontSize: '1.2rem', fontWeight: 'bold', color: '#eee' }}>{p.size}</span>
                         <span style={{ fontSize: '1.6rem', fontWeight: '900', color: 'var(--color-primary)' }}>{p.price}</span>
                       </div>
                     ))

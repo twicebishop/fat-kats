@@ -1,12 +1,12 @@
 :root {
-  --color-bg: #f8fafc; /* very light gray/blue */
-  --color-surface: #ffffff; /* white surface */
-  --color-primary: #9333ea; /* vibrant purple */
-  --color-secondary: #7e22ce; /* darker purple for contrast */
-  --color-accent: #000000; /* pure black */
-  --color-text: #0f172a; /* dark slate */
-  --color-text-muted: #64748b;
-  --color-border: #e2e8f0;
+  --color-bg: #1e0030; /* Very deep dark purple */
+  --color-surface: #3b0764; /* Slightly lighter purple */
+  --color-primary: #d8b4fe; /* Bright pastel purple for contrast */
+  --color-secondary: #e9d5ff; /* Light lavender */
+  --color-accent: #ffffff; 
+  --color-text: #ffffff; /* White text */
+  --color-text-muted: #c084fc; /* Muted vibrant purple */
+  --color-border: #6b21a8;
   
   --font-heading: var(--font-outfit), sans-serif;
   --font-body: var(--font-inter), sans-serif;
@@ -23,7 +23,8 @@
 }
 
 body {
-  background-color: var(--color-bg);
+  background: linear-gradient(135deg, #1e0030 0%, #3b0764 100%);
+  background-attachment: fixed;
   color: var(--color-text);
   font-family: var(--font-body);
   line-height: 1.6;
@@ -73,7 +74,8 @@ a {
 
 .btn-primary {
   background-color: var(--color-primary);
-  color: white;
+  color: #1e0030; /* Dark text on bright button */
+  border-color: var(--color-primary);
 }
 
 .btn-primary:hover {
@@ -119,15 +121,35 @@ label {
 
 /* Menu Cards */
 .menu-card {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: var(--radius-lg);
+  padding: 20px;
   display: flex;
   flex-direction: column;
+  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.4s ease, border-color 0.4s ease;
+  overflow: hidden;
+}
+
+.menu-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 15px 30px rgba(216, 180, 254, 0.3); /* Neon glow */
+  border-color: var(--color-primary);
 }
 
 .menu-card img {
   width: 100%;
   height: 200px;
   object-fit: cover;
+  border-radius: var(--radius-md);
+  margin-bottom: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.menu-card:hover img {
+  transform: scale(1.08) rotate(3deg);
 }
 
 .menu-card-content {
@@ -135,11 +157,6 @@ label {
   flex: 1;
   display: flex;
   flex-direction: column;
-}
-
-.menu-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
 }
 
 /* Category Banner */
@@ -154,13 +171,14 @@ label {
 
 /* Coupons */
 .coupon-card {
-  background-color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(10px);
   border: 2px dashed var(--color-primary);
   border-radius: 8px;
   padding: 20px;
   position: relative;
   text-align: center;
-  transition: transform 0.3s ease;
+  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.4s ease;
   color: var(--color-text);
   display: flex;
   flex-direction: column;
@@ -168,17 +186,17 @@ label {
 }
 
 .coupon-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 15px 30px rgba(216, 180, 254, 0.3); /* Neon glow */
 }
 
 .coupon-card::before {
   content: '✂️';
   position: absolute;
-  top: -12px;
+  top: -16px;
   left: 20px;
-  font-size: 1.2rem;
-  background: white;
+  font-size: 1.5rem;
+  background: transparent;
   padding: 0 4px;
 }
 
@@ -192,21 +210,22 @@ label {
   width: 100%;
   border-collapse: collapse;
   text-align: center;
-  background: rgba(255, 255, 255, 0.8);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
   border-radius: var(--radius-md);
   overflow: hidden;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .menu-table th, .menu-table td {
   padding: 16px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .menu-table th {
-  background-color: rgba(147, 51, 234, 0.1);
+  background-color: rgba(255, 255, 255, 0.05);
   color: var(--color-primary);
   font-weight: 700;
   font-size: 1.1rem;
@@ -225,4 +244,47 @@ label {
 .menu-table td input {
   text-align: center;
   padding: 8px;
+  background: rgba(0,0,0,0.5);
+  color: white;
+  border: 1px solid rgba(255,255,255,0.2);
+  border-radius: 4px;
+}
+
+/* Floating Ingredients */
+.floating-ingredients-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.floating-ingredient {
+  position: absolute;
+  bottom: -100px;
+  /* animation-name is set dynamically in the component */
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  opacity: 0.2;
+}
+
+@keyframes float-up-cw {
+  0% {
+    transform: translateY(0) rotate(0deg);
+  }
+  100% {
+    transform: translateY(-120vh) rotate(360deg);
+  }
+}
+
+@keyframes float-up-ccw {
+  0% {
+    transform: translateY(0) rotate(0deg);
+  }
+  100% {
+    transform: translateY(-120vh) rotate(-360deg);
+  }
 }

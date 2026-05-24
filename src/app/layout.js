@@ -1,5 +1,6 @@
 import { Outfit, Inter } from "next/font/google";
 import "./globals.css";
+import FloatingIngredients from "@/components/FloatingIngredients";
 
 const outfit = Outfit({
   variable: "--font-outfit",
@@ -19,7 +20,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${outfit.variable} ${inter.variable}`}>
-      <body>{children}</body>
+      <body>
+        <FloatingIngredients />
+        {children}
+      </body>
     </html>
   );
 }
